@@ -11,3 +11,8 @@ int main()
         printf("\nIt's a Consonant");
     return 0;
 }
+//
+//
+// Output ==>
+// Enter an Alphabet: i
+// It's a Vowel
