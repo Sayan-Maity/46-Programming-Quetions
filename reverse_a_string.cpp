@@ -15,3 +15,8 @@ void main()
     }
     printf("\nReverse string :%s", string);
 }
+//
+//
+// Output ==>
+// Enter String : sayan
+// Reverse string :nayas
