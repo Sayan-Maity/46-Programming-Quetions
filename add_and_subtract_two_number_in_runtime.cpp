@@ -20,16 +20,16 @@ int main()
     printf("Enter two number for sum: ");
     scanf("%f %f", &number1, &number2);
     result1 = addition(number1, number2);
-    printf("%.2f\n", number1, number2, result1);
+    printf("%.2f\n", result1);
     printf("Enter two number for sub: ");
     scanf("%f %f", &number3, &number4);
     result2 = substraction(number3, number4);
-    printf("%.2f\n", number3, number4, result2);
+    printf("%.2f\n", result2);
 }
 //
 //
 // Output ==>
 // Enter two number for sum: 6 7
+// 13.00
+// Enter two number for sub: 9 3
 // 6.00
-// Enter two number for sub: 9 0
-// 9.00
