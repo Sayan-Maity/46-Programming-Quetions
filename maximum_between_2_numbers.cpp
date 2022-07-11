@@ -11,11 +11,11 @@ void main()
 
     if (*ptr1 > *ptr2)
     {
-        printf("\n\n %d is the maximum number.\n\n", *ptr1);
+        printf("\n %d", *ptr1);
     }
     else
     {
-        printf("\n\n %d is the maximum number.\n\n", *ptr2);
+        printf("\n %d ", *ptr2);
     }
 }
 //
