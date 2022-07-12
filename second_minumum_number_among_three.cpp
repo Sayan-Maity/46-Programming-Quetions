@@ -2,46 +2,33 @@
 
 int main()
 {
-    double a, b, c;
+    float a, b, c, res;
     printf("Enter 3 numbers: ");
-    scanf("%lf%lf%lf", &a, &b, &c); // lf is a format specifier to take double as input
+    scanf("%f%f%f", &a, &b, &c); // lf is a format specifier to take double as input
     // a is the largest
     if (a >= b && a >= c)
     {
         if (b >= c)
-        {
-            /* .2lf restricts the number till
-                2 decimal places */
-            printf("\n\n%.2lf is the 2nd minimum number\n", b);
-        }
+            res = b;
         else
-        {
-            printf("\n\n%.2lf is the 2nd minimum number\n", c);
-        }
+            res = c;
     }
     else if (b >= a && b >= c)
     {
         if (a >= c)
-        {
-            printf("\n\n%.2lf is the 2nd minimum number\n", a);
-        }
+            res = a;
         else
-        {
-            printf("\n\n%.2lf is the 2nd minimum number\n", c);
-        }
+            res = c;
     }
     // c is the largest number of the three
     else if (a >= b)
-    {
-        printf("\n\n%.2lf is the 2nd minimum number\n", a);
-    }
+        res = a;
     else
-    {
-        printf("\n\n%.2lf is the 2nd minimum number\n", b);
-    }
+        res = b;
+    printf("2nd minimum number is: %.2f", res);
 }
 //
 //
 // Output ==>
-// Enter 3 numbers: 9 1 0
-// 1.00 is the 2nd minimum number
+// Enter 3 numbers: 2 3 4
+// 2nd minimum number is: 3.00
