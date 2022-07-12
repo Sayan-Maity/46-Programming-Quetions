@@ -24,3 +24,8 @@ int main()
 
     printf("Maximum among all three numbers = %d", max);
 }
+//
+//
+// Output ==>
+// Enter three numbers: 2 6 4
+// Maximum among all three numbers = 6
