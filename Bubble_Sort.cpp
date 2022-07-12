@@ -3,15 +3,15 @@
 int main()
 {
 
-    int arr[50], num, x, y, temp;
+    int arr[50], n, x, y, temp;
     printf("Enter Number of Elements you want in array: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
     printf("Please Enter the Value of Elements: ");
-    for (x = 0; x < num; x++)
+    for (x = 0; x < n; x++)
         scanf("%d", &arr[x]);
-    for (x = 0; x < num - 1; x++)
+    for (x = 0; x < n - 1; x++)
     {
-        for (y = 0; y < num - x - 1; y++)
+        for (y = 0; y < n - x - 1; y++)
         {
             if (arr[y] > arr[y + 1])
             {
@@ -22,7 +22,7 @@ int main()
         }
     }
     printf("Array after implementing bubble sort: ");
-    for (x = 0; x < num; x++)
+    for (x = 0; x < n; x++)
     {
         printf("%d  ", arr[x]);
     }
