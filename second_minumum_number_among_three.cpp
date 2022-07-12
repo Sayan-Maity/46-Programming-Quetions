@@ -4,8 +4,7 @@ int main()
 {
     float a, b, c, res;
     printf("Enter 3 numbers: ");
-    scanf("%f%f%f", &a, &b, &c); // lf is a format specifier to take double as input
-    // a is the largest
+    scanf("%f%f%f", &a, &b, &c);
     if (a >= b && a >= c)
     {
         if (b >= c)
@@ -20,7 +19,6 @@ int main()
         else
             res = c;
     }
-    // c is the largest number of the three
     else if (a >= b)
         res = a;
     else
