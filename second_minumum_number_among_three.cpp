@@ -4,7 +4,7 @@ int main()
 {
     float a, b, c, res;
     printf("Enter 3 numbers: ");
-    scanf("%f%f%f", &a, &b, &c);
+    scanf("%f%f%f", &a, &b, &c); // %lf = take double as input, %f = take float as input
     if (a >= b && a >= c)
     {
         if (b >= c)
