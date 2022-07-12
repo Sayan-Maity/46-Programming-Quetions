@@ -2,23 +2,23 @@
 
 int main()
 {
-    int num1, num2, num3, max;
+    int a, b, c, max;
     printf("Enter three numbers: ");
-    scanf("%d%d%d", &num1, &num2, &num3);
-    if (num1 > num2)
+    scanf("%d%d%d", &a, &b, &c);
+    if (a > b)
     {
-        if (num1 > num3)
-            max = num1;
+        if (a > c)
+            max = a;
         else
-            max = num3;
+            max = c;
     }
     else
     {
-        if (num2 > num3)
-            max = num2;
+        if (b > c)
+            max = b;
         else
         {
-            max = num3;
+            max = c;
         }
     }
 
