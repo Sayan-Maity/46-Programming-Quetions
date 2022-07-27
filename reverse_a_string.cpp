@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void main()
+int main()
 {
     char string[20], temp;
     int i, length;
@@ -11,7 +11,8 @@ void main()
     {
         temp = string[i];
         string[i] = string[length];
-        string[length--] = temp;
+        string[length] = temp;
+        length--;
     }
     printf("\nReverse string :%s", string);
 }
